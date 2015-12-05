@@ -1,0 +1,49 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+g = 9.81
+h1 = 0.62
+h2 = 0.15
+rho0 = 1000.
+rho1 = 976.1
+N0 = np.sqrt(((rho0-rho1)/rho0)*(g/h2))
+c_0 = (N0*h2)/1.711 
+c = c_0*1.6
+y = np.zeros(76)
+for i in range(len(names)):
+	filename = names[i]
+	print filename
+	file = open(filename)
+	files.append[file]
+for i in range(76):
+	line = file.readline()
+	string = line.replace('(', '')
+	string = string.replace(')', '')
+	vals = string.split()
+	y[i] = vals[4]
+print y
+y_h2 = y/h2
+file.readline()
+file.readline()
+j = 0
+for line in file.readlines():
+	string = line.replace('(', '')
+	string = string.replace(')', '')
+	time = float(string.split()[0])
+	vals = string.split()[1:]
+	vals = np.array(map(float, vals))
+	u = []
+	for i in range(0,len(vals),3):
+		u.append(vals[i])
+	u_c = u/c
+	if time > 100:
+		plt.figure()
+		plt.plot(u_c, y_h2)
+		plt.title('Time = %s' % time)
+		plt.xlabel('$u/c$')
+		plt.ylabel('$y/h_2$')
+		plt.axis([-0.8, 1.2, -4, 1])
+		plt.savefig('%04d.png' % j)
+	j += 1
+file.close()
+

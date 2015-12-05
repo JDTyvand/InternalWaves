@@ -1,0 +1,5 @@
+names = ['184_03_default','184_03_linearUpwind','184_03_linearUpwind_convection','184_03_QUICK', \
+	 '184_03_QUICK_convection','184_03_SFCD','184_03_SFCD_convection']
+for fname in (names):
+	data = np.loadtxt(fname)
+	print data
