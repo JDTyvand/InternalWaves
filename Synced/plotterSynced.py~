@@ -21,8 +21,7 @@ y = np.linspace(-0.61,0.14,76)
 for fname in (names):
 	data = np.loadtxt(fname)
 	plt.plot(data/c,y/h2)
-plt.legend([names[i].replace('.txt','') for i in range(len(names))], loc = 'lower right')
-plt.title('Time = 92s')
-plt.xlim(-0.6,1.2)
+	plt.legend([names[i].replace('.txt','') for i in range(len(names))], loc = 'lower right')
+	plt.axis = ([-0.8,1.5,-4,1])
 plt.savefig('time_0.png')
 
