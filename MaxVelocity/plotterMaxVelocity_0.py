@@ -14,14 +14,17 @@ c_0 = (N0*h2)/1.711
 c = c_0*1.6
 print c_0
 print c
-names = ['184_03_default_0.txt','184_03_linearUpwind_0.txt','184_03_linearUpwind_convection_0.txt','184_03_QUICK_0.txt', \
+names = ['184_01_linearUpwind_0.txt','184_01_linearUpwind_convection_0.txt','184_01_QUICK_0.txt',
+	 '184_01_QUICK_convection_0.txt','184_01_SFCD_0.txt','184_01_SFCD_convection_0.txt', 		'184_03_linearUpwind_0.txt','184_03_linearUpwind_convection_0.txt','184_03_QUICK_0.txt',
 	 '184_03_QUICK_convection_0.txt','184_03_SFCD_0.txt','184_03_SFCD_convection_0.txt']
+styles = ['b-','g-','r-','c-','m-','y-','b--','g--','r--','c--','m--','y--']
 y = np.linspace(-0.61,0.14,76)
 
-plt.figure()
+count = 0
 for fname in (names):
 	data = np.loadtxt(fname)
-	plt.plot(data/c,y/h2)
+	plt.plot(data/c,y/h2, styles[count])
+	count += 1
 plt.legend([names[i].replace('_0.txt','') for i in range(len(names))], loc = 'lower right')
 plt.title('Time = 0s')
 plt.xlim(-0.6, 1.2)

@@ -1,9 +1,10 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-names = ['184_03_default','184_03_linearUpwind','184_03_linearUpwind_convection','184_03_QUICK', \
-	 '184_03_QUICK_convection','184_03_SFCD','184_03_SFCD_convection']
+names = ['184_01_linearUpwind','184_01_linearUpwind_convection','184_01_QUICK','184_01_QUICK_convection','184_01_SFCD','184_01_SFCD_convection','184_03_linearUpwind','184_03_linearUpwind_convection','184_03_QUICK', 
+'184_03_QUICK_convection','184_03_SFCD','184_03_SFCD_convection']
 max_vals = []
+max_times = []
 for i in range(len(names)):
 	file = open(names[i])
 	for j in range(78):
@@ -20,7 +21,8 @@ for i in range(len(names)):
 			max_u = vals.max()
 			max_time = time
 	max_vals.append(max_u)
+	max_times.append(max_time)
 	file.close()
 print max_vals
-print np.mean(max_vals)
+print np.mean(max_times)
 

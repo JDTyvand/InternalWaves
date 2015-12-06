@@ -14,8 +14,9 @@ c_0 = (N0*h2)/1.711
 c = c_0*1.6
 print c_0
 print c
-names = ['184_03_default.txt','184_03_linearUpwind.txt','184_03_linearUpwind_convection.txt','184_03_QUICK.txt', \
-	 '184_03_QUICK_convection.txt','184_03_SFCD.txt','184_03_SFCD_convection.txt']
+names = ['184_01_linearUpwind.txt','184_01_linearUpwind_convection.txt','184_01_QUICK.txt','184_01_QUICK_convection.txt','184_01_SFCD.txt','184_01_SFCD_convection.txt','184_03_linearUpwind.txt','184_03_linearUpwind_convection.txt','184_03_QUICK.txt', 
+'184_03_QUICK_convection.txt','184_03_SFCD.txt','184_03_SFCD_convection.txt']
+
 y = np.linspace(-0.61,0.14,76)
 
 for fname in (names):
