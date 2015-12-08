@@ -3,6 +3,7 @@ import numpy as np
 
 names = ['184_01_linearUpwind','184_01_linearUpwind_convection','184_01_QUICK','184_01_QUICK_convection','184_01_SFCD','184_01_SFCD_convection','184_03_linearUpwind','184_03_linearUpwind_convection','184_03_QUICK', 
 '184_03_QUICK_convection','184_03_SFCD','184_03_SFCD_convection']
+
 max_vals = []
 max_times = []
 for i in range(len(names)):
