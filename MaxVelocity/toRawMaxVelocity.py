@@ -1,7 +1,7 @@
 import numpy as np
 
 names = ['184_01_filteredLinear','184_01_linearUpwind','184_01_QUICK','184_01_upwind','184_03_filteredLinear','184_03_linearUpwind','184_03_QUICK', 
-'184_03_upwind']
+'184_03_upwind','368_03_filteredLinear','368_03_linearUpwind','368_03_upwind']
 
 
 for i in range(len(names)):
@@ -29,8 +29,7 @@ for i in range(len(names)):
 		if max(u) > max(max_u):
 			max_u = u
 			max_index = len(u_matrix) - 1
-	print max_index
-	print u_matrix[max_index]
+
 	for l in range(len(max_u)):
 		f_5.write(str(u_matrix[max_index-50][l]) + '\n')
 		f_1.write(str(u_matrix[max_index-10][l]) + '\n')

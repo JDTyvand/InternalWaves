@@ -16,14 +16,14 @@ print c_0
 print c
 names = ['184_01_filteredLinear_min5.txt','184_01_linearUpwind_min5.txt','184_01_QUICK_min5.txt',
 	 '184_01_upwind_min5.txt','184_03_filteredLinear_min5.txt','184_03_linearUpwind_min5.txt','184_03_QUICK_min5.txt',
-	 '184_03_upwind_min5.txt']
-styles = ['b-','r-','g-','y-','b--','r--','g--','y--']
+	 '184_03_upwind_min5.txt','368_03_filteredLinear_min1.txt','368_03_linearUpwind_min5.txt','368_03_upwind_min5.txt']
+styles = ['b-','r-','g-','y-','b--','r--','g--','y--','bx','rx','gx','yx']
 y = np.linspace(-0.61,0.14,76)
 
 count = 0
 for fname in (names):
 	data = np.loadtxt(fname)
-	plt.plot(data/c,y/h2, styles[count])
+	plt.plot(data/c,y/h2, styles[count], markersize=3)
 	count += 1
 plt.legend([names[i].replace('_min5.txt','') for i in range(len(names))], loc = 'lower right')
 plt.title('Time = -5s')
