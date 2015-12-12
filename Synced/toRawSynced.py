@@ -1,7 +1,7 @@
 import numpy as np
 
 names = ['184_01_filteredLinear','184_01_linearUpwind','184_01_QUICK','184_01_upwind','184_03_filteredLinear','184_03_linearUpwind','184_03_QUICK', 
-'184_03_upwind','368_03_filteredLinear','368_03_linearUpwind','368_03_QUICK','368_03_upwind']
+'184_03_upwind','368_01_filteredLinear','368_01_linearUpwind','368_01_QUICK','368_01_upwind','368_03_filteredLinear','368_03_linearUpwind','368_03_QUICK','368_03_upwind']
 
 
 for i in range(len(names)):
@@ -19,7 +19,7 @@ for i in range(len(names)):
 		u = []
 		for k in range(0,len(vals),3):
 			u.append(vals[k])
-		if time == 90.6:
+		if time == 90.4:
 			for l in range(len(u)):
 				f.write(str(u[l]) + '\n')
 		

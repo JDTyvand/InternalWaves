@@ -15,9 +15,9 @@ c = c_0*1.6
 print c_0
 print c
 names = ['184_01_filteredLinear.txt','184_01_linearUpwind.txt','184_01_QUICK.txt','184_01_upwind.txt','184_03_filteredLinear.txt','184_03_linearUpwind.txt','184_03_QUICK.txt', 
-'184_03_upwind.txt','368_03_filteredLinear.txt','368_03_linearUpwind.txt','368_03_QUICK.txt','368_03_upwind.txt']
+'184_03_upwind.txt','368_01_filteredLinear.txt','368_01_linearUpwind.txt','368_01_QUICK.txt','368_01_upwind.txt','368_03_filteredLinear.txt','368_03_linearUpwind.txt','368_03_QUICK.txt','368_03_upwind.txt']
 
-styles = ['b-','r-','g-','y-','b--','r--','g--','y--','bx','rx','gx','yx']
+styles = ['b-','r-','g-','y-','b--','r--','g--','y--','bx','rx','gx','yx','b+','r+','g+','y+']
 y = np.linspace(-0.61,0.14,76)
 
 count = 0
@@ -26,7 +26,7 @@ for fname in (names):
 	plt.plot(data/c,y/h2, styles[count], markersize=3)
 	count += 1
 plt.legend([names[i].replace('.txt','') for i in range(len(names))], loc = 'lower right')
-plt.title('Time = 90.6s')
+plt.title('Time = 90.4s')
 plt.xlim(-0.6,1.2)
 plt.xlabel('u/c')
 plt.ylabel('y/h2')

@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 names = ['184_01_filteredLinear','184_01_linearUpwind','184_01_QUICK','184_01_upwind','184_03_filteredLinear','184_03_linearUpwind','184_03_QUICK', 
-'184_03_upwind','368_03_filteredLinear','368_03_linearUpwind','368_03_QUICK','368_03_upwind']
+'184_03_upwind','368_01_filteredLinear','368_01_linearUpwind','368_01_QUICK','368_01_upwind','368_03_filteredLinear','368_03_linearUpwind','368_03_QUICK','368_03_upwind']
 
 max_vals = []
 max_times = []

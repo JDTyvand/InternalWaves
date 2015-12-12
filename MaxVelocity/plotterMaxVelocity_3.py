@@ -16,8 +16,8 @@ print c_0
 print c
 names = ['184_01_filteredLinear_3.txt','184_01_linearUpwind_3.txt','184_01_QUICK_3.txt',
 	 '184_01_upwind_3.txt','184_03_filteredLinear_3.txt','184_03_linearUpwind_3.txt','184_03_QUICK_3.txt',
-	 '184_03_upwind_3.txt','368_03_filteredLinear_3.txt','368_03_linearUpwind_3.txt','368_03_QUICK_3.txt','368_03_upwind_3.txt']
-styles = ['b-','r-','g-','y-','b--','r--','g--','y--','bx','rx','gx','yx']
+	 '184_03_upwind_3.txt','368_01_filteredLinear_3.txt','368_01_linearUpwind_3.txt','368_01_QUICK_3.txt','368_01_upwind_0.txt','368_03_filteredLinear_3.txt','368_03_linearUpwind_3.txt','368_03_QUICK_3.txt','368_03_upwind_3.txt']
+styles = ['b-','r-','g-','y-','b--','r--','g--','y--','bx','rx','gx','yx','b+','r+','g+','y+']
 y = np.linspace(-0.61,0.14,76)
 
 count = 0
