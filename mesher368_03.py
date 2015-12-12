@@ -2,7 +2,7 @@ import numpy as np
 
 f = open('mesher368_03.txt', 'a')
 lscale = np.linspace(5, 72.95, 29)
-rscale = np.linspace(5, 72.95, 46)
+rscale = np.linspace(5, 72.95, 47)
 print lscale
 print rscale
 lcount = 1
