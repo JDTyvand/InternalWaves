@@ -21,17 +21,22 @@ internalField   uniform 0.01;
 
 boundaryField
 {
-    floor
+    leftWall
     {
         type            epsilonWallFunction;
         value           uniform 0.01;
     }
-    ceiling
+    rightWall
     {
         type            epsilonWallFunction;
         value           uniform 0.01;
     }
-    fixedWalls
+    bottomWall
+    {
+        type            epsilonWallFunction;
+        value           uniform 0.01;
+    }
+    atmosphere
     {
         type            epsilonWallFunction;
         value           uniform 0.01;

@@ -36,7 +36,7 @@ boundaryField
     atmosphere
     {
         type            fixedValue;
-        value           uniform 72.95;
+        value           uniform (0,0,0);
     }
 }
 

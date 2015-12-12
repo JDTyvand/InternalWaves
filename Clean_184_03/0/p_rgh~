@@ -20,21 +20,27 @@ internalField   uniform 0;
 
 boundaryField
 {
-    floor
+    leftWall
     {
         type            fixedFluxPressure;
         rho             rhok;
         value           uniform 0;
     }
 
-    ceiling
+    rightWall
     {
         type            fixedFluxPressure;
         rho             rhok;
         value           uniform 0;
     }
 
-    fixedWalls
+    bottomWall
+    {
+        type            fixedFluxPressure;
+        rho             rhok;
+        value           uniform 0;
+    }
+    atmosphere
     {
         type            fixedFluxPressure;
         rho             rhok;

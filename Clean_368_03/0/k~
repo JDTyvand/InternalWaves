@@ -21,17 +21,22 @@ internalField   uniform 0.1;
 
 boundaryField
 {
-    floor
+    leftWall
     {
         type            kqRWallFunction;
         value           uniform 0.1;
     }
-    ceiling
+    rightWall
     {
         type            kqRWallFunction;
         value           uniform 0.1;
     }
-    fixedWalls
+    bottomWall
+    {
+        type            kqRWallFunction;
+        value           uniform 0.1;
+    }
+    atmosphere
     {
         type            kqRWallFunction;
         value           uniform 0.1;

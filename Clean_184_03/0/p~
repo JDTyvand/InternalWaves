@@ -20,19 +20,24 @@ internalField   uniform 0;
 
 boundaryField
 {
-    floor
+    leftWall
     {
         type            calculated;
         value           $internalField;
     }
 
-    ceiling
+    rightWall
     {
         type            calculated;
         value           $internalField;
     }
 
-    fixedWalls
+    bottomWall
+    {
+        type            calculated;
+        value           $internalField;
+    }
+    atmosphere
     {
         type            calculated;
         value           $internalField;

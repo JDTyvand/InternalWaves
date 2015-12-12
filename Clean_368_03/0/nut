@@ -31,7 +31,7 @@ boundaryField
         type            nutkWallFunction;
         value           uniform 0;
     }
-    bottomWall
+    lowerWall
     {
         type            nutkWallFunction;
         value           uniform 0;
