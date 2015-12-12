@@ -2,19 +2,19 @@ import numpy as np
 
 f = open('mesher368_03.txt', 'a')
 lscale = np.linspace(5, 72.95, 29)
-rscale = np.linspace(5, 72.95, 39)
+rscale = np.linspace(5, 72.95, 46)
 print lscale
 print rscale
 lcount = 1
 rcount = 1
 for i in range(144):
 	print ('Line %d' % (i+1))
-	if i < 42:
+	if i < 39:
 		print('Uniform lower temperature 5')
 		for j in range(368):
 			f.write(str(5))
 			f.write('\n')
-	elif 41 < i < 69:
+	elif 38 < i < 65:
 		print lscale[lcount]
 		print('Left stratification, 5 right')
 		for j in range(10):
@@ -24,7 +24,7 @@ for i in range(144):
 		for j in range(358):
 			f.write(str(5))
 			f.write('\n')
-	elif 68 < i < 106:
+	elif 64 < i < 99:
 		print('Fresh water left, 5 right')
 		for j in range(10):
 			f.write(str(72.95))
